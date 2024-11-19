@@ -1,0 +1,45 @@
+@font-face {
+  font-family: header_font;
+  src: url("fonts/posterable.ttf");
+}
+@font-face {
+  font-family: desc_font;
+  src: url("fonts/bright.otf");
+}
+
+h1 {
+  padding: 15px;
+  text-align: center;
+  font-family: header_font, sans-serif;
+  font-size: 50px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: desc_font, sans-serif;
+  font-size: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 10px;
+}
