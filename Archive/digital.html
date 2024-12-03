@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadNav() {
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                });
+        }
+    </script>
+</head>
+<body onload="loadNav()">
+    <div id="nav-placeholder"></div>
+    <h1>Digital Works</h1>
+    <div class="grid-container">
+        <div class="gallery">
+            <a target="_blank" href="images/digital1.png">
+                <img src="images/digital1.png" alt="Digital Still Life" width="600" height="400">
+            </a>
+            <div class="desc">Image Description here</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="images/digital2.png">
+                <img src="images/digital2.png" alt="Logo" width="600" height="400">
+            </a>
+            <div class="desc">Image description here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/render1.jpg">
+                <img src="images/render1.jpg" alt="Render 1" width="600" height="400">
+            </a>
+            <div class="desc">Image description here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/render2.jpg">
+                <img src="images/render2.jpg" alt="Render 2" width="600" height="400">
+            </a>
+            <div class="desc">Image description here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/render3.png">
+                <img src="images/render3.png" alt="Render 3" width="600" height="400">
+            </a>
+            <div class="desc">Image description here</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="images/render4.png">
+                <img src="images/render4.png" alt="Render 4" width="600" height="400">
+            </a>
+            <div class="desc">Image description here</div>
+        </div>
+    </div>
+    <center><h2>Video Works</h2>
+    <div class="grid-container">
+        <div class="gallery">
+            <video width="320" height="240" controls>
+                <source src="images/video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            <div class="desc">Image description here</div>
+        </div>
+        <div class="gallery">
+            <video width="320" height="240" controls>
+                <source src="images/video2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            <div class="desc">Image description here</div>
+        </div>
+        <div class="gallery">
+            <video width="320" height="240" controls>
+                <source src="images/video3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            <div class="desc">Image description here</div>
+        </div>
+    </div>
+</body>
+</html>
